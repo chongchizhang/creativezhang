@@ -1,0 +1,56 @@
+::selection {
+  background: #ffb7b7; }
+
+::-moz-selection {
+  background: #ffb7b7; }
+
+body {
+  overflow: hidden;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.home {
+  width: 100%;
+  position: absolute; }
+  .home .logo {
+    width: 55px; }
+  .home .introduction .h3 {
+    font-weight: 700;
+    line-height: 2.5rem; }
+    .home .introduction .h3 a {
+      color: black; }
+      .home .introduction .h3 a:hover {
+        color: #ed1c24; }
+
+.content-container {
+  margin: 0 auto;
+  background: rgba(186, 186, 186, 0.8); }
+  .content-container .close {
+    position: absolute;
+    text-shadow: 0 0px 0;
+    right: 1.3rem; }
+
+.fa-times-thin:before {
+  content: '\00d7'; }
+
+.work1-pop {
+  width: 100vw;
+  height: 100vh;
+  color: orange; }
+  .work1-pop html body h1 {
+    color: red; }
+
+.footer {
+  font-weight: 700;
+  color: gray; }
+  .footer .nav-link {
+    color: gray; }
+  .footer .nav-work .dropdown {
+    display: none;
+    position: fixed; }
+  .footer .nav-work:hover .dropdown {
+    display: block;
+    background-color: white; }
+  .footer i {
+    color: lightgray; }
+  .footer p {
+    font-family: "Roboto", sans-serif; }
