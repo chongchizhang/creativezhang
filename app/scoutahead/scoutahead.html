@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="theme-color" content="black">
@@ -10,33 +11,81 @@
 
 <body>
   <div class="container-fluid p-0">
-  	<div class="col-md-8 col-sm-12 offset-md-2 mt-0 mt-md-5 wrapper">
-  		<div class="block">
-  			<div class="row">
-  				<div class="col-md-4"><h4>Scoutahead</h4></div>
-  			<div class="col-md-8">
-  				<p>Lorem ipsum dolor sit amet, blandit ipsum montes enim, arcu ultrices sit sodales. Nunc mi sed ex habitant, vestibulum cras id consectetuer commodo aenean metus, sed lacus rhoncus facilisi, odio commodo, a nulla ullamcorper habitasse ante est ut. </p>
-  			</div>
-  			</div>
-  		</div>
-  		<div class="block p-0">
-  			<img src="https://placehold.it/1000x500" alt="" class="p-2"/>
-  			<img src="https://placehold.it/1000x400" alt="" class="p-2" />
-  			<img src="https://placehold.it/1000x300" alt="" class="p-2" />
-  			<img src="https://placehold.it/1000x200" alt="" class="p-2" />
-  			<img src="https://placehold.it/1000x100" alt="" class="p-2" />
-  			<div class="p-2">
-  				<div class="embed-responsive embed-responsive-16by9">
-  				<iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/1ftJFma9tFGyPu7pgQvLjo-9oyutUmxZtygNi3FMyAh8/embed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
-  			</div>
-  			</div>
-
-  		</div>
-  	</div>
+    <div class="col-md-8 col-sm-12 offset-md-2 mt-0 mt-md-5 wrapper">
+      <div class="block">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Scoutahead</h4></div>
+          <div class="col-md-8">
+            <p>Lorem ipsum dolor sit amet, blandit ipsum montes enim, arcu ultrices sit sodales. Nunc mi sed ex habitant, vestibulum cras id consectetuer commodo aenean metus, sed lacus rhoncus facilisi, odio commodo, a nulla ullamcorper habitasse ante est
+              ut. </p>
+          </div>
+        </div>
+      </div>
+      <div class="block p-0">
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <!-- card1 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-block">
+                something1
+                <!-- <p>Buttons description</p>
+                <p data-height="300" data-theme-id="28386" data-slug-hash="MeaQYw" data-default-tab="css,result" data-user="chongchizhang" data-embed-version="2" data-pen-title="Buttons" class="codepen">See the Pen <a href="https://codepen.io/chongchizhang/pen/MeaQYw/">Buttons</a> by Joey Zhang (<a href="https://codepen.io/chongchizhang">@chongchizhang</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <p>UI elements</p>
+                <p data-height="300" data-theme-id="28386" data-slug-hash="QEkpXk" data-default-tab="css,result" data-user="chongchizhang" data-embed-version="2" data-pen-title="UI - toggle, radio, checkbox" class="codepen">See the Pen <a href="https://codepen.io/chongchizhang/pen/QEkpXk/">UI - toggle, radio, checkbox</a> by Joey Zhang (<a href="https://codepen.io/chongchizhang">@chongchizhang</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <p>Table</p>
+                <p data-height="300" data-theme-id="28386" data-slug-hash="XKgPmw" data-default-tab="html,result" data-user="chongchizhang" data-embed-version="2" data-pen-title="Simple Responsive Table" class="codepen">See the Pen <a href="https://codepen.io/chongchizhang/pen/XKgPmw/">Simple Responsive Table</a> by Joey Zhang (<a href="https://codepen.io/chongchizhang">@chongchizhang</a>) on <a href="https://codepen.io">CodePen</a>.</p> -->
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-block">
+                <p>Prototype</p>
+                <div class="d-flex justify-content-center">
+                  <iframe width="438" height="930" src="//invis.io/RAB8QKK5G" frameborder="0" allowfullscreen margin="0 auto"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="card-block">
+                <img src="https://placehold.it/1000x300" alt="" class="p-2" />
+                <div class="p-2">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/1ftJFma9tFGyPu7pgQvLjo-9oyutUmxZtygNi3FMyAh8/embed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
 <script src="https://use.fontawesome.com/777bb49ed3.js" charset="utf-8"></script>
-<script src="js/main.js" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/scoutahead.js" charset="utf-8"></script>
 
 </html>
