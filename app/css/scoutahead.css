@@ -15,6 +15,9 @@ body {
 .block {
   background: transparent; }
 
+.card h5 b {
+  cursor: pointer; }
+
 .wrapper {
   border: 0px solid;
   border-radius: 3px;

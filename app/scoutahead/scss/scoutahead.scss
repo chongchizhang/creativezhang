@@ -18,6 +18,14 @@ body {
 	background: rgba(0, 0, 0, 0.0);
 }
 
+.card {
+  h5 {
+    b {
+      cursor: pointer;
+    }
+  }
+}
+
 .wrapper {
 	border: 0px solid;
 	border-radius: 3px;
