@@ -10,6 +10,7 @@ body {
 
 .home {
   width: 100%;
+  top: 0;
   position: absolute; }
   .home .logo {
     width: 55px; }
@@ -32,11 +33,11 @@ body {
 .fa-times-thin:before {
   content: '\00d7'; }
 
-.work1-pop {
+.work-pop {
   width: 100vw;
   height: 100vh;
   color: orange; }
-  .work1-pop html body h1 {
+  .work-pop html body h1 {
     color: red; }
 
 .footer {
