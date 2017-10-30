@@ -6,9 +6,9 @@
   <meta name="theme-color" content="black">
   <title>creativezhang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Roboto:100" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
@@ -52,10 +52,11 @@
         <li class="nav-item nav-work">
           <a class="nav-link" href="#">Work</a>
           <div class="dropdown w-100">
-            <a class="nav-link" href="#" id="open-content">Scoutahead &nbsp <i class="fa fa-lock" aria-hidden="true"></i></a>
-            <!-- <a class="nav-link" href="#" onclick="removeClass('is-hidden')" id="target">Scoutahead &nbsp <i class="fa fa-lock" aria-hidden="true"></i></a> -->
-            <a class="nav-link" href="#">Fill-A-Space</a>
-            <a class="nav-link" href="#">Ruler Plus</a>
+            <ul>
+              <li><a class="nav-link" data-toggle="collapse" data-target="#scoutahead">Scoutahead &nbsp <i class="fa fa-lock" aria-hidden="true"></i></a></li>
+              <li><a class="nav-link" data-toggle="collapse" data-target="#fillaspace">Fill-A-Space</a></li>
+              <li><a class="nav-link" data-toggle="collapse" data-target="#rulerplus">Ruler Plus</a></li>
+            </ul>
           </div>
         </li>
         <li class="nav-item">
@@ -65,7 +66,7 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <p class="p-3 is-hidden" id="contact">
+      <p class="p-3 invisible" id="contact">
         xiaochi1214@hotmail.com<br> Instagram
         <br> Dribbble
         <br> Codepen
@@ -73,11 +74,27 @@
     </div>
   </div>
 
+  <ul class="tab-content">
+    <li id="scoutahead" class="collapse fade">
+      <div class="container-fluid col-md-12 p-0 content-container">
+        <button class="close m-1 p-1 m-md-4 p-md-4 js-hideButton"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
+        <iframe id="project-1" data-src="/scoutahead/scoutahead.html" src="/scoutahead/scoutahead.html" frameborder="0" class="work1-pop"></iframe>
+      </div>
+    </li>
+    <li id="fillaspace" class="collapse fade">
+      <div class="container-fluid col-md-12 p-0 content-container">
+        <button class="close m-1 p-1 m-md-4 p-md-4 js-hideButton"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
+        <iframe id="project-1" data-src="/fillaspace/fillaspace.html" src="about:blank" frameborder="0" class="work1-pop"></iframe>
+      </div>
+    </li>
+    <li id="rulerplus" class="collapse fade">
+      <div class="container-fluid col-md-12 p-0 content-container">
+        <button class="close m-1 p-1 m-md-4 p-md-4 js-hideButton"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
+        <iframe id="project-1" data-src="/rulerplus/rulerplus.html" src="about:blank" frameborder="0" class="work1-pop"></iframe>
+      </div>
+    </li>
+  </ul>
 
-  <div class="container-fluid col-md-12 p-0 is-hidden content-container" id="project1">
-    <button class="close m-1 p-1 m-md-4 p-md-4" id="close-content"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
-    <iframe id="project-1" data-src="/scoutahead/scoutahead.html" src="about:blank" frameborder="0" class="work1-pop"></iframe>
-  </div>
 
 
 
@@ -85,6 +102,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
 <script src="https://use.fontawesome.com/777bb49ed3.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="js/main.js" charset="utf-8"></script>
 
 </html>
