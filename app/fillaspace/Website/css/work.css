@@ -1,0 +1,254 @@
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit; 
+	margin: 0;
+	padding: 0;
+	border: 0; 
+}
+
+a {
+	color: black; 
+}
+
+p {
+	text-align: justify;
+}
+
+header {
+	height: 86px; 
+}
+
+.logo {
+	width: 50px;
+	margin: 15px; 
+	float: left;
+}
+
+.menu {
+	height: 5%;
+	float: right;
+	padding: 27px 10px;  
+	display: flex; 
+	flex-direction: row;
+}
+
+.menu a {
+	font-weight: 600; 
+	font-size: 1.5em; 
+	text-decoration: none; 
+	color: black;
+	padding: 10px; 
+}
+
+header:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.container1 {
+	line-height: 1.5em; 
+	padding: 20px 20px;  
+}
+
+.container2 img {
+	width: 100%; 
+	padding: 5px 10px; 
+}
+
+blockquote {
+	font-style:italic;
+	background-color:whitesmoke;
+	padding:1em;
+	border-left:10px solid rgba(0,0,0,0.1);
+	transition:border-left 0.5s;
+	-webkit-transition:border-left 0.5s;
+	-moz-transition:border-left 0.5s;
+	-ms-transition:border-left 0.5s;
+	-o-transition:border-left 0.5s;
+}
+
+cite {
+	text-align: right; 
+	display: block; 
+}
+
+p {
+	line-height: 1.8em; 
+}
+
+footer {
+	margin: 10px auto;
+	text-align: center; 
+	height: 85px; 
+}
+
+.fa {
+	margin: 20px; 
+}
+
+.fa-dribbble:hover {
+	color: #ea4c89; 
+}
+
+.fa-behance:hover {
+	color: #005cff; 
+}
+
+.fa-github:hover {
+	color: gray;
+}
+
+.fa-twitter:hover {
+	color: #2caae1;
+}
+
+
+/*BACK TO TOP*/
+
+.cd-top {
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	padding: 12px; 
+	background-color: red;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+.cd-top.cd-fade-out {
+	/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+	opacity: .5;
+}
+.cd-top:hover {
+	background-color: red; 
+	opacity: 1; 
+}
+
+/*=================================*/
+
+/*tablet viewport*/
+@media (min-width: 768px) {
+	header, .container1, .container2, footer {
+		margin: 0 auto; 
+		width: 90vw;
+	}
+}
+
+
+
+/*-------------Above is mobile device-------------
+-------------Below is desktop device-------------*/
+
+
+/*desktop viewport*/
+@media (min-width: 992px) {
+	p {
+		text-align: left;
+	}
+	header, .wrapper, footer {
+		margin: 0 auto; 
+		width: 80vw;
+	}
+
+	.menu {
+		padding: 32px 0px; 
+	}
+	
+	.menu a:hover{
+		-webkit-box-shadow: 0px 16px 23px -16px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 16px 23px -16px rgba(0,0,0,0.75);
+		box-shadow: 0px 16px 23px -16px rgba(0,0,0,0.75);
+	}
+
+	.menu a {
+		padding: 10px 20px; 
+		font-weight: 600; 
+		font-size: 1.2em;
+	}
+
+	/*.menu a:hover {
+		color: red;
+	}*/
+
+	.wrapper {
+		display: flex; 
+		flex-direction: row;
+	}
+
+	.container1 {
+		flex-basis: 40%;
+	}
+
+	.container2 {
+		flex-basis: 60%;
+	}
+
+	footer {
+		margin-top: 40px; 
+		width: 40vw; 
+		-webkit-box-shadow: 0px -14px 23px -16px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px -14px 23px -16px rgba(0,0,0,0.75);
+		box-shadow: 0px -14px 23px -16px rgba(0,0,0,0.75);
+	}
+
+	/*animation*/
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+	.fade-in {
+	  	opacity: 0;  /* make things invisible upon start */
+		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:1s;
+		-moz-animation-duration:1s;
+		animation-duration:1s;
+	}
+}
+
+@media (min-width: 1200px) {
+	header, .wrapper {
+		margin: 0 auto; 
+		width: 70vw;
+	}
+
+	footer {
+		width: 30vw; 
+	}
+
+	.container1 {
+		flex-basis: 30%;
+	}
+
+	.container2 {
+		flex-basis: 70%;
+	}
+}

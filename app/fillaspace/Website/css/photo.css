@@ -1,0 +1,7 @@
+.fa-link:hover {
+	color: red;
+}
+
+blockquote:hover {
+	border-left:10px solid red;
+}

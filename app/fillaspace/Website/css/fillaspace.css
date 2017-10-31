@@ -1,0 +1,20 @@
+.fa-link:hover, .container2 a:hover {
+	color: #8ec41d;
+}
+
+blockquote:hover {
+	border-left:10px solid #8ec41d;
+}
+
+.container2 a {
+	text-decoration: none; 
+}
+
+.container2 h3 {
+	text-align: center; 
+	font-size: 1.5em; 
+}
+
+.container2 .fa {
+	margin-left: 0px; 
+}

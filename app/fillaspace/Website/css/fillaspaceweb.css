@@ -1,0 +1,38 @@
+.fa-link:hover {
+	color: #8ec41d;
+}
+
+.prettyprint ol.linenums > li {
+	list-style-type: decimal;
+}
+
+ol {
+	color: gray; 
+} 
+
+ol.linenums {
+	padding-left: 40px; 
+}
+
+li {
+	width: 500px; 
+}
+
+.prettyprint {
+	font-size: 1em; 
+	overflow: auto; 
+}
+
+blockquote:hover {
+	border-left:10px solid #8ec41d;
+}
+
+h2{
+	margin: 20px 0px 10px; 
+}
+
+code {
+	background-color: whitesmoke; 
+	border-radius: 3px; 
+	padding: 2px 8px; 
+}
