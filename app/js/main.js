@@ -34,6 +34,9 @@ $("#open-contact").siblings().click(function() {
   elem.classList.add("invisible");
 });
 
+$('#scoutahead').on('show.bs.collapse', function () {
+	$("#scoutahead-src").attr("src", "scoutahead/scoutahead.html");
+})
 
 var hideButton = document.getElementsByClassName("js-hideButton");
 for (var i = 0; i < hideButton.length; i++) {
