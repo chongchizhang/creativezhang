@@ -1,0 +1,32 @@
+// font mixin
+@mixin font-face($family, $src, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$src}.eot'); // IE9 compat
+    src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+      url('#{$src}.woff') format('woff'), // standards
+      url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+      url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+// font face
+@include font-face(Avenir-Heavy, '../fonts/Avenir-Heavy-05');
+@include font-face(Avenir-Roman, '../fonts/Avenir-Roman-12');
+@include font-face(Avenir-Book, '../fonts/Avenir-Book-01');
+@include font-face(Avenir-Light, '../fonts/Avenir-Light-07');
+@include font-face(Avenir-Heavy-Italic, '../fonts/Avenir-HeavyOblique-06');
+@include font-face(Avenir-Roman-Italic, '../fonts/Avenir-Oblique-11');
+@include font-face(Avenir-Book-Italic, '../fonts/Avenir-BookOblique-02');
+@include font-face(Avenir-Light-Italic, '../fonts/Avenir-LightOblique-08');
+// font usage
+$font-bold: 'Avenir-Heavy', sans-serif;
+$font-secondary: 'Avenir-Roman', sans-serif;
+$font-main: 'Avenir-Book', sans-serif;
+$font-light: 'Avenir-Light', sans-serif;
+$font-bold-italic: 'Avenir-Heavy-Italic', sans-serif;
+$font-secondary-italic: 'Avenir-Roman-Italic', sans-serif;
+$font-main-italic: 'Avenir-Book-Italic', sans-serif;
+$font-light-italic: 'Avenir-Light-Italic', sans-serif;

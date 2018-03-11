@@ -1,3 +1,59 @@
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url("../fonts/Avenir-Heavy-05.eot");
+  src: url("../fonts/Avenir-Heavy-05.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Heavy-05.woff") format("woff"), url("../fonts/Avenir-Heavy-05.ttf") format("truetype"), url("../fonts/Avenir-Heavy-05.svg#Avenir-Heavy") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Roman;
+  src: url("../fonts/Avenir-Roman-12.eot");
+  src: url("../fonts/Avenir-Roman-12.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Roman-12.woff") format("woff"), url("../fonts/Avenir-Roman-12.ttf") format("truetype"), url("../fonts/Avenir-Roman-12.svg#Avenir-Roman") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url("../fonts/Avenir-Book-01.eot");
+  src: url("../fonts/Avenir-Book-01.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Book-01.woff") format("woff"), url("../fonts/Avenir-Book-01.ttf") format("truetype"), url("../fonts/Avenir-Book-01.svg#Avenir-Book") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Light;
+  src: url("../fonts/Avenir-Light-07.eot");
+  src: url("../fonts/Avenir-Light-07.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Light-07.woff") format("woff"), url("../fonts/Avenir-Light-07.ttf") format("truetype"), url("../fonts/Avenir-Light-07.svg#Avenir-Light") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Heavy-Italic;
+  src: url("../fonts/Avenir-HeavyOblique-06.eot");
+  src: url("../fonts/Avenir-HeavyOblique-06.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-HeavyOblique-06.woff") format("woff"), url("../fonts/Avenir-HeavyOblique-06.ttf") format("truetype"), url("../fonts/Avenir-HeavyOblique-06.svg#Avenir-Heavy-Italic") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Roman-Italic;
+  src: url("../fonts/Avenir-Oblique-11.eot");
+  src: url("../fonts/Avenir-Oblique-11.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Oblique-11.woff") format("woff"), url("../fonts/Avenir-Oblique-11.ttf") format("truetype"), url("../fonts/Avenir-Oblique-11.svg#Avenir-Roman-Italic") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Book-Italic;
+  src: url("../fonts/Avenir-BookOblique-02.eot");
+  src: url("../fonts/Avenir-BookOblique-02.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-BookOblique-02.woff") format("woff"), url("../fonts/Avenir-BookOblique-02.ttf") format("truetype"), url("../fonts/Avenir-BookOblique-02.svg#Avenir-Book-Italic") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Avenir-Light-Italic;
+  src: url("../fonts/Avenir-LightOblique-08.eot");
+  src: url("../fonts/Avenir-LightOblique-08.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-LightOblique-08.woff") format("woff"), url("../fonts/Avenir-LightOblique-08.ttf") format("truetype"), url("../fonts/Avenir-LightOblique-08.svg#Avenir-Light-Italic") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
 ::selection {
   background: #ffb7b7; }
 
@@ -5,21 +61,24 @@
   background: #ffb7b7; }
 
 body {
-  overflow: hidden;
-  font-family: "Roboto Condensed", sans-serif; }
+  overflow: hidden; }
 
 .home {
   width: 100%;
   top: 0;
   position: absolute; }
   .home .logo {
-    width: 55px; }
-  .home .introduction .h3 {
-    font-weight: 700;
-    line-height: 2.5rem; }
-    .home .introduction .h3 a {
+    width: 55px;
+    position: absolute;
+    right: 0; }
+    @media screen and (max-width: 640px) {
+      .home .logo {
+        position: relative; } }
+  .home .introduction {
+    font-family: "Avenir-Heavy", sans-serif; }
+    .home .introduction p a {
       color: black; }
-      .home .introduction .h3 a:hover {
+      .home .introduction p a:hover {
         color: #ed1c24; }
 
 .content-container {
@@ -54,4 +113,4 @@ body {
   .footer i {
     color: lightgray; }
   .footer p {
-    font-family: "Roboto", sans-serif; }
+    font-family: "Avenir-Roman", sans-serif; }
