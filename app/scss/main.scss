@@ -82,6 +82,7 @@ body {
   }
 	.nav-work {
 		.dropdown {
+      font-family: $font-secondary; 
 			display: none;
 			position: fixed;
 		}
@@ -95,7 +96,16 @@ body {
   i {
     color: lightgray;
   }
-  p {
+  .contact {
     font-family: $font-secondary;
+    .contact-resume  {
+      padding-top: 1rem;
+      a {
+        color: gray; 
+        &:hover {
+          color: black; 
+        }
+      }
+    }
   }
 }
