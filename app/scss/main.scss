@@ -84,7 +84,15 @@ body {
 		.dropdown {
       font-family: $font-secondary; 
 			display: none;
-			position: fixed;
+			position: fixed; 
+      span {
+        &:hover {
+          color: black; 
+          i {
+            color: black; 
+          }
+        }
+      }
 		}
 		&:hover {
 			.dropdown {
@@ -96,14 +104,30 @@ body {
   i {
     color: lightgray;
   }
-  .contact {
-    font-family: $font-secondary;
-    .contact-resume  {
-      padding-top: 1rem;
-      a {
-        color: gray; 
-        &:hover {
-          color: black; 
+  .nav-photo {
+    span {
+      color: gray; 
+      &:hover {
+        color: black; 
+      }
+    }
+  }
+  .nav-contact {
+    .dropdown {
+      font-family: $font-secondary;
+      display: none; 
+      position: fixed; 
+      left: 0; 
+    }
+    &:hover {
+      .dropdown {
+        display: block;
+        background-color: white;
+        a {
+          color: gray; 
+          &:hover {
+            color: black; 
+          }
         }
       }
     }

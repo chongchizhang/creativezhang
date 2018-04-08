@@ -114,16 +114,28 @@ body {
     font-family: "Avenir-Roman", sans-serif;
     display: none;
     position: fixed; }
+    .footer .nav-work .dropdown span:hover {
+      color: black; }
+      .footer .nav-work .dropdown span:hover i {
+        color: black; }
   .footer .nav-work:hover .dropdown {
     display: block;
     background-color: white; }
   .footer i {
     color: lightgray; }
-  .footer .contact {
-    font-family: "Avenir-Roman", sans-serif; }
-    .footer .contact .contact-resume {
-      padding-top: 1rem; }
-      .footer .contact .contact-resume a {
-        color: gray; }
-        .footer .contact .contact-resume a:hover {
-          color: black; }
+  .footer .nav-photo span {
+    color: gray; }
+    .footer .nav-photo span:hover {
+      color: black; }
+  .footer .nav-contact .dropdown {
+    font-family: "Avenir-Roman", sans-serif;
+    display: none;
+    position: fixed;
+    left: 0; }
+  .footer .nav-contact:hover .dropdown {
+    display: block;
+    background-color: white; }
+    .footer .nav-contact:hover .dropdown a {
+      color: gray; }
+      .footer .nav-contact:hover .dropdown a:hover {
+        color: black; }
