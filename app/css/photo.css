@@ -87,14 +87,19 @@ body {
   height: 1000px;
   padding-right: 20px; }
 
-blockquote:hover {
-  border-left: 10px solid orangered; }
+blockquote {
+  font-family: "Avenir-Roman-Italic", sans-serif;
+  padding-left: 1rem;
+  border-left: .1rem solid red; }
 
-h4 {
+h4, h5 {
   font-family: "Avenir-Heavy", sans-serif; }
 
-p {
+h6 {
   font-family: "Avenir-Roman", sans-serif; }
+
+p {
+  font-family: "Avenir-Book", sans-serif; }
 
 .footer {
   color: gray;
