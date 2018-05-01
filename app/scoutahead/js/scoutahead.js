@@ -1,2 +1,1 @@
-// alert("hello")
 $('.collapse').collapse()
