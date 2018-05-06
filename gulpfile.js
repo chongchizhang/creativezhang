@@ -6,20 +6,20 @@ var sass        = require('gulp-sass');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./app"
+        server: "./docs"
     });
 
-    // gulp.watch("app/scss/*.scss", ['sass']);
-    gulp.watch(['app/scss/*.scss', 'app/scoutahead/scss/*.scss', 'app/fillaspace/scss/*.scss', 'app/photo/scss/*.scss', 'app/rulerplus/scss/*.scss'], ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
+    // gulp.watch("docs/scss/*.scss", ['sass']);
+    gulp.watch(['docs/scss/*.scss', 'docs/scoutahead/scss/*.scss', 'docs/fillaspace/scss/*.scss', 'docs/photo/scss/*.scss', 'docs/rulerplus/scss/*.scss'], ['sass']);
+    gulp.watch("docs/*.html").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    // return gulp.src("app/scss/*.scss")
-    return gulp.src(['app/scss/*.scss', 'app/scoutahead/scss/*.scss', 'app/fillaspace/scss/*.scss', 'app/photo/scss/*.scss', 'app/rulerplus/scss/*.scss'])
+    // return gulp.src("docs/scss/*.scss")
+    return gulp.src(['docs/scss/*.scss', 'docs/scoutahead/scss/*.scss', 'docs/fillaspace/scss/*.scss', 'docs/photo/scss/*.scss', 'docs/rulerplus/scss/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest("app/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 });
 
