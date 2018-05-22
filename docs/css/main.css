@@ -63,6 +63,15 @@
 body {
   overflow: hidden; }
 
+canvas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: none; }
+
 .home {
   width: 100%;
   height: 100%;
@@ -116,11 +125,10 @@ body {
     position: fixed; }
     .footer .nav-work .dropdown span:hover {
       color: black; }
-      .footer .nav-work .dropdown span:hover i {
-        color: black; }
+    .footer .nav-work .dropdown:hover + canvas {
+      display: block; }
   .footer .nav-work:hover .dropdown {
-    display: block;
-    background-color: white; }
+    display: block; }
   .footer i {
     color: lightgray; }
   .footer .nav-photo span {
